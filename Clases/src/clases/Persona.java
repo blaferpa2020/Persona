@@ -40,9 +40,19 @@ public class Persona  {
         this.numeroDeTelefono = numeroDeTelefono;
     }
     /**
-     * este no se cambia nada
+     * este sigue igual
      */
 }
+public class Alumno extends Persona{
+     String srt;
+    int edad;
+    String numeroDeTelefono;
+}
+/**
+ * Este es una clase alumno nueva
+ * @author Pablo
+ * @param numeroDeTelefono
+ */
 public class Profesor extends Persona{
     String srt;
     int edad;
@@ -57,7 +67,7 @@ public class Profesor extends Persona{
         super(numeroDeTelefono);
     }
     /**
-     * 
+     * Este es tanto para profesor como para alumno
      */
     public void printInformacionPersonal(){
         System.out.println("Nombre: "+ srt);
@@ -66,7 +76,8 @@ public class Profesor extends Persona{
         
     }
     /**
-     * 
+     * @return numeroDeTelefono
+     * @since 2019
      */
     public void printTodaInformacion(){
         System.out.println("Nombre: "+srt);
@@ -76,4 +87,8 @@ public class Profesor extends Persona{
                 System.out.println(p);
             }
     }
+    /**
+     * Este es el final del programa hecho en clase.
+     * 
+     */
 }
